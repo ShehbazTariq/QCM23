@@ -16,14 +16,15 @@ pip install qiskit
 To use the `random_circuit()` function to generate a random quantum circuit, import the function from the `random_circuit.py` file and call it with the desired number of qubits, depth, and basis gates:
 
 ```python
-from qiskit import QuantumCircuit
+#Example
 from random_circuit import random_circuit
 
 num_qubits = 3
 depth = 10
-basis_gates = ['x', 'rx', 'rz', 'cx']
 
+basis_gates = ['x', 'rx', 'rz', 'cx']
 circuit = random_circuit(num_qubits, depth, basis_gates)
+circuit.draw(output='mpl')
 
 ```
 
